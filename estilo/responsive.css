@@ -1,0 +1,154 @@
+ /*body#resultados {float: center; margin-left: 10%; }*/
+ ul.egmenu {  
+    background: #333; 
+    height: 100px;
+    width: 100%; 
+}
+
+ul.egmenu > li { 
+    float: left; 
+    position: relative;  
+}
+
+ul.egmenu ul {
+    background: #444; 
+    display: none; 
+    position: absolute;
+    left: 0; top: 100%;
+}
+
+ul.egmenu a { 
+    cursor: pointer; 
+    display: block; 
+    color: white; 
+    line-height: 30px; 
+    padding: 0 10px; 
+}
+
+ul.egmenu li { list-style: none; }
+
+ul.egmenu li:hover { background: #555;  }
+ul.egmenu li:hover ul { display: block;  }
+
+@media screen and ( max-width: 780px) {
+    ul.egmenu {  height: auto; position: relative;}
+	
+	ul.egmenu {  width: 520px; }
+	table{  float: right; position: relative;  width:520px; /*left: 20px;*/ right: 10%; }
+	ul.egmenu {  text-align: center; }
+	
+	#navBar {width: 520px; float: left;  position: relative; left: 10px;}
+	#sectionLinks{float: center-left;  width: 20px; left: 200px; position: relative; }
+	
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 40px; }
+    ul.egmenu ul { position: relative; }
+	
+	
+       #breadCrumb {
+            display: block;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+            /*background-color: #333;*/
+			height: 20px;
+            width: 505px;
+			float: right;
+			left: 6px;
+            position: relative;
+        }
+       
+}
+
+
+@media only screen and (max-width: 480px) {
+    ul.egmenu {  height: auto; position: relative;}
+	
+	ul.egmenu {  width: 360px; }
+	table{  float: right; position: relative;  width:380px;  left: 19px; }
+	ul.egmenu {  text-align: center; }
+	
+	#navBar {width: 360px; float: left;  position: relative; left: 0px;}
+	#sectionLinks{float: left;  width: 20px; left: 145px; position: relative; }
+	
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 40px; }
+    ul.egmenu ul { position: relative; }
+	
+	
+       #breadCrumb {
+            display: block;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+            background-color: #333;
+			height: 20px;
+            width: 380px;
+			float: right;
+			left: 9px;
+            position: relative;
+        }
+       
+}
+/*
+@media screen and ( max-width: 600px) {
+    ul.egmenu {  height: auto; position: relative;}
+	
+	ul.egmenu {  width: 720px; }
+	table{  float: right; position: relative;  width:720px; left: 20px; }
+	ul.egmenu {  text-align: center; }
+	
+	#navBar {width: 720px; float: left;  position: relative; left: 10px;}
+	#sectionLinks{float: center-left;  width: 20px; left: 300px; position: relative; }
+	
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 40px; }
+    ul.egmenu ul { position: relative; }
+	
+	
+       #breadCrumb {
+            display: block;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+            background-color: #333;
+			height: 20px;
+            width: 405px;
+			float: right;
+			left: 6px;
+            position: relative;
+        }
+       
+}*/
+
+@media all and (min-width: 481px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu li:hover { background: #555;  }
+    ul.egmenu li:hover ul { display: block;  }
+	
+	
+}
+
+@media all and (max-width: 1980px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: auto; }
+    /*table{float: left; position: relative; right: 25%;}*/
+	
+	
+}
+
+$('.has-sub').click( function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('tap');
+});
+
+@media all and (max-width: 480px) {
+    ul.egmenu {  height: auto; }
+    ul.egmenu > li {  float: none; width: 100%; }
+    ul.egmenu a { line-height: 100px; }
+    ul.egmenu ul { position: relative; }
+
+    ul.egmenu li.tap { background: #555;  }
+    ul.egmenu li.tap ul { display: block;  }
+}

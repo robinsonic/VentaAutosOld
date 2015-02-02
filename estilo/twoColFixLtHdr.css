@@ -1,0 +1,9 @@
+.tablaprincipal{
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #424E9F;
+	border="0";
+}
+.brillo:hover{
+	background-color: #FF0;
+}
