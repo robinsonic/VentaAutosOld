@@ -17,7 +17,7 @@ html{
 	width:200px;
 	margin:60%;
 	display = inline-block;
-}
+}<!--CAMBIO-->
 
 .boton {
 	float:left;
